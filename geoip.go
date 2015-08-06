@@ -245,6 +245,11 @@ func (gi *GeoIP) GetRecord(ip string) *GeoIPRecord {
 	return rec
 }
 
+
+func (gi *GeoIP) GetRecordV6(ip string) *GeoIPRecord {
+	return gi.GetRecord(ip)
+}
+
 // Returns the country code and region code for an IP address. Requires
 // the GeoIP Region database.
 func (gi *GeoIP) GetRegion(ip string) (string, string) {
