@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/abh/geoip"
+	"github.com/etix/geoip"
 )
 
 func main() {
